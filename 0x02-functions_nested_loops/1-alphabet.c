@@ -3,7 +3,6 @@
  *  print_alphabet - entry point
  *  Return: 0 success
  */
-
 void print_alphabet(void)
 {
 	char j;
