@@ -6,7 +6,7 @@
  * @str: func para
  *
  * Return: void
-*/
+ */
 
 void puts_half(char *str)
 {
@@ -18,7 +18,7 @@ void puts_half(char *str)
 	{
 		num = len / 2;
 	}
-	else 
+	else
 	{
 		num = (len + 1) / 2;
 	}
