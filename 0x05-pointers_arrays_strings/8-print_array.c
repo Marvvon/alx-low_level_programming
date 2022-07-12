@@ -5,21 +5,28 @@
  * @a: func para
  * @n: func para
  *Return: void
-*/
+ */
 
 void print_array(int *a, int n)
 {
 	int count;
 
-	for (count = 1; count <= n; count++)
+	if (n <= 0)
 	{
-		if (count == n)
+		printf("\n");
+	}
+	else
+	{
+		for (count = 1; count <= n; count++)
 		{
-			printf("%d\n", a[count - 1]);
-		}
-		else
-		{
-			printf("%d", a[count - 1]);
+			if (count == n)
+			{
+				printf("%d\n", a[count - 1]);
+			}
+			else
+			{
+				printf("%d, ", a[count - 1]);
+			}
 		}
 	}
 }
