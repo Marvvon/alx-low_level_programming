@@ -1,21 +1,24 @@
 #include "main.h"
-#include <string.h>
-#include <stdio.h>
-
 /**
- * rev_string - reverses a string
- * @s: function para
+ * print_rev - prints reversed string, followed by a new line
+ * @s: pointer to the string to print
  * Return: void
- */
+*/
 
-void rev_string(char *s)
+void print_rev(char *s)
 {
-	int k;
-	char *school = s;
+	int i = 0;
 
-	for (k = strlen(s); k != '\0'; k--)
+	while (s[i])
 	{
-		*school = s[k];
+		i++;
 	}
-	printf("\n");
+
+	while (i--)
+	{
+		_putchar(s[i]);
+	}
+
+	_putchar('\n');
+
 }
